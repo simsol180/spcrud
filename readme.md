@@ -76,7 +76,7 @@ The below example first create's a list item, then reads it, then updates it and
 })()
 
 [home](#sp-crud)  
-<br/>
+<br/><br/>  
 
 ```
 #### Items Documentation
