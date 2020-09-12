@@ -74,12 +74,13 @@ The below example first create's a list item, then reads it, then updates it and
 		})//close read
 	})//close create
 })()
+
 ```
 
 [home](#sp-crud)  
-<br/>
+<br/><br/>
 
-#### Items Documentation  
+### ItemsDocumentation
 
 Class Name: &quot;ItemsQuery&quot;  
 JS reference: simsol180.spcrud.Items
