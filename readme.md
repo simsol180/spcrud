@@ -1,14 +1,14 @@
 
 # SP-Crud
 ## Quick Links
-[create an anchor](#mission)
-[create an anchor](#Installation)
-[create an anchor](#items)
-[create an anchor](#items-example)
-[create an anchor](#items-documentation)
-[create an anchor](#documents)
-[create an anchor](#documents-example)
-[create an anchor](#documents-documentation)
+[Mission](#mission)  
+[Installation](#Installation)  
+[Items](#items)  
+1. [Example](#items-example)
+2. [Documentation](#items-documentation)  
+[Documents](#documents)
+1. [Example](#documents-example)
+2. [Documentation](#documents-documentation)
 ## Mission
 
 SP-Crud makes programming with REST easier. As you know, CRUD stands for Create, Read, Update and Delete which succinctly identifies the mission of SP-Crud. Its mission is to make those things as easy as possible.
