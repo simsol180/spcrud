@@ -183,7 +183,7 @@ DocumentQuery Object:
 
 | Name | Parameters | Result |
 | --- | --- | --- |
-| upload | <ol><li>A [DataTransfer.files](https://developer.mozilla.org/en-US/docs/Web/API/DataTransfer/files) object</li><li>Overwritable (Boolean) Default false. True if you want uploaded documents to overwrite pre-existing documents. False if you want uploads with pre-existing files to fail.</li><li>ensureUnique (Boolean) Default false. True if you want to add a unique number to the end of documents. False if you want the original file names unchanged.</li></ol> | An array of UploadResponses  |
+| upload | <ol><li>A [DataTransfer.files](https://developer.mozilla.org/en-US/docs/Web/API/DataTransfer/files) object</li><li>Overwritable (Boolean) <br/>Default false. <br/>True if you want uploaded documents to overwrite pre-existing documents. <br/>False if you want uploads with pre-existing files to fail.</li><li>ensureUnique (Boolean) Default false. <br/>True if you want to add a unique number to the end of documents. <br/>False if you want the original file names unchanged.</li></ol> | An array of UploadResponses  |
 
 <br/><br/>
 
