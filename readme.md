@@ -60,7 +60,7 @@ The Items Query Object is intended to aid in changing list items.
 ```
 #### Documentation
 
-Class Name: &quot;ItemsQuery&quot;
+Class Name: &quot;ItemsQuery&quot;  
 JS reference: simsol180.spcrud.Items
 
 Class Instantiation
@@ -123,8 +123,8 @@ The Document Query Object is intended to handle the part of an upload following 
 ```
 #### Documentation
 
-Class Name: &quot;DocumentQuery&quot;
- JS reference: simsol180.spcrud.Document
+Class Name: &quot;DocumentQuery&quot;  
+JS reference: simsol180.spcrud.Document
 
 Class Instantiation
 
