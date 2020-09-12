@@ -169,7 +169,7 @@ JavaScript (index.js)
 })();
 
 ```
-
+<br/><br/>
 
 #### Documents Documentation
 Class Name: &quot;DocumentQuery&quot;  
