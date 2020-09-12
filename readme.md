@@ -141,8 +141,13 @@ DocumentQuery Object:
 UploadResponses look like this:
 ```javascript
 {
- d:{ ListItemAllFields:{ ID:1,Id:1 }, Name: &quot;Your.doc&quot; }
- }
+	d:{
+		ListItemAllFields:{
+			ID:1,
+			Id:1
+		}, Name: "Your.doc"
+	}
+}
  ```
 To get the id of the uploaded document, try this:
 ```javascript
