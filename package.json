@@ -16,11 +16,15 @@
     "webpack-cli": "^3.3.12"
   },
   "dependencies": {
-    "axios": "^0.19.2"
+    "axios": "^0.19.2",
+    "git": "^0.1.5"
   },
   "babel": {
     "presets": [
       "@babel/preset-env"
     ]
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@simsol180"
   }
 }
