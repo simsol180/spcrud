@@ -110,12 +110,11 @@ The Document Query Object is intended to handle the part of an upload following 
 			dropArea.style.background="white";
 			dropArea.innerHTML="uploading...";
 
-			var items=ev.dataTransfer.files
-
 
 
 
 			/************    Doing the upload here!     ****************/
+			var items=ev.dataTransfer.files
 			Documents.upload(items,false,true).then(function(results){
 				console.log("upload",results)
 				dropArea.innerHTML="done uploading...";
