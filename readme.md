@@ -112,7 +112,7 @@ The Document Query Object is intended to handle the part of an upload following 
 
 			var items=ev.dataTransfer.files
 			//will add a new copy of the file with a unique string instead of overwriting
-			Documents.upload(items,false,true).then(function(results){
+			<Mark>Documents.upload(items,false,true)</Mark>.then(function(results){
 				console.log("upload",results)
 				dropArea.innerHTML="done uploading...";
 			})
