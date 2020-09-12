@@ -2,12 +2,11 @@
 # SP-Crud
 ## Quick Links
 1. [Mission](#mission)  
-2. [Installation](#Installation)  
-How to add sp-crud to your site
-3. [Items](#items) Update List Items
+2. [Installation](#Installation)- How to add sp-crud to your site
+3. [Items](#items)- Update List Items
 	1. [Example](#items-example)
 	2. [Documentation](#items-documentation)
-4. [Documents](#documents) Upload documents
+4. [Documents](#documents)- Upload documents
 	1. [Example](#documents-example)
 	2. [Documentation](#documents-documentation)
 
