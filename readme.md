@@ -1,12 +1,14 @@
 
 # SP-Crud
 ## Quick Links
-[Mission](#mission)  
-[Installation](#Installation)  
-[Items](#items)  
-		([Example](#items-example),[Documentation](#items-documentation))  
-[Documents](#documents)
-		([Example](#documents-example), [Documentation](#documents-documentation))
+1. [Mission](#mission)  
+2. [Installation](#Installation)  
+3. [Items](#items)  
+	1. [Example](#items-example)
+	2. [Documentation](#items-documentation)
+4. [Documents](#documents)
+	1. [Example](#documents-example)
+	2. [Documentation](#documents-documentation)
 
 
 ## Mission
