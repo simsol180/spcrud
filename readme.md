@@ -27,13 +27,12 @@ Include the js file in your project using the script tag.
 ```html
 <script type="text/javascript" src="spcrud.simsol180.js"></script>
 ```
-
+<br /><br />
 [home](#sp-crud)  
 
 ### Items
 
 The Items Query Object is intended to aid in changing list items.
-
 
 #### Items Example
 The below example first create's a list item, then reads it, then updates it and finally deletes it.
@@ -75,7 +74,7 @@ The below example first create's a list item, then reads it, then updates it and
 })()
 
 [home](#sp-crud)  
-
+<br />
 ```
 #### Items Documentation
 
@@ -166,7 +165,7 @@ JavaScript (index.js)
 
 })()
 ```
-
+<br />
 #### Documents Documentation
 
 Class Name: &quot;DocumentQuery&quot;  
@@ -183,7 +182,7 @@ DocumentQuery Object:
 | Name | Parameters | Result |
 | --- | --- | --- |
 | upload | 1. A [DataTransfer.files](https://developer.mozilla.org/en-US/docs/Web/API/DataTransfer/files) object 2. Overwritable (Boolean) Default false. True if you want uploaded documents to overwrite pre-existing documents. False if you want uploads with pre-existing files to fail. 3. ensureUnique (Boolean) Default false. True if you want to add a unique number to the end of documents. False if you want the original file names unchanged. | An array of UploadResponses  |
-
+<br /><br />
 UploadResponses look like this:
 ```javascript
 {
@@ -195,6 +194,7 @@ UploadResponses look like this:
 	}
 }
  ```
+ <br />
 To get the id of the uploaded document, try this:
 ```javascript
 Documents.upload(items,false,true).then(function(results){
@@ -204,7 +204,7 @@ Documents.upload(items,false,true).then(function(results){
 	}
 })
 ```
-
+<br />
 Similarly, to get the name:
 ```javascript
 Documents.upload(items,false,true).then(function(results){
