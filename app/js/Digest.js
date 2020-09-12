@@ -32,7 +32,7 @@ function setReload(data){
     queryWebDigest(data.web)
   },data.expires-now-2000);
 }
-function queryWebDigest(web){
+function queryWebDigest(web){console.log(web)
   webs[web] = new Promise((resolve,reject)=>{
     var q= axios.post(web+"/_api/contextinfo?$select=FormDigestTimeoutSeconds,FormDigestValue",{
       method: "POST",headers: {"Accept": "application/json; odata=verbose"}
@@ -52,7 +52,7 @@ function queryWebDigest(web){
 }
 
 export default class WebDigest{
-  constructor(webUrl){
+  constructor(webUrl){console.log(webUrl)
     return new Promise((resolve,reject)=>{
       if(webUrl in webs==false){
         queryWebDigest(webUrl).then(function(d){resolve(d);},reject);

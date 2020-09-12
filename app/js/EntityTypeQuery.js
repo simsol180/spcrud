@@ -3,7 +3,7 @@ import Query from './Query.js';
 let types={};
 
 export default class EntityTypeQuery extends Query{
-  constructor(list,web){
+  constructor(list,web){console.log(web)
     super(web);
     this.list=list;
   }

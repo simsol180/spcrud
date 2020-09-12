@@ -86,7 +86,20 @@ export default class DocumentQuery extends ItemsQuery{
     if(isEmpty(ensureUnique)===false){eu=ensureUnique;}
     return new Promise((resolve,reject)=>{
       t.digest.then(function(wd){
-        processFiles(files,wd.digest,t.list,wd.web,ow,eu).then(resolve).catch(reject)
+        processFiles(files,wd.digest,t.list,wd.web,ow,eu).then(function(responses){
+          var results=[];
+          for(var i in responses){
+            var d=responses[i];
+            console.dir(d)
+            if("data" in d){
+              results.push(d.data)
+            }else{
+              results.push(d)
+            }
+
+          }
+          resolve(results)
+        }).catch(reject)
       })
     })
   }

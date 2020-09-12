@@ -35,5 +35,4 @@ export default class ItemsQuery extends EntityTypeQuery{
     let url="/_api/web/lists/getbytitle('"+this.list+"')/items("+id+")";
     return super.delete(url,data);
   }
-
 }

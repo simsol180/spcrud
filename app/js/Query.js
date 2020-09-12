@@ -1,11 +1,24 @@
 import WebDigest from './Digest.js';
 const axios = require('axios');
 
+function cleanData(data){
+  function cleanRow(row){
+    for(let propName in row){
+      if(row[propName] && typeof row[propName]=="object"  && "__deferred" in row[propName]){
+        delete row[propName];
+      }
+    }
+  }
+  if(Array.isArray(data)){for(let i in data){cleanRow(data[i]);}
+  }else{cleanRow(data);}
+}
+
 export default class Query{
   constructor(web=""){
     this.digest=new WebDigest(web);
   }
   create(url,data){
+    cleanData(data);
     let t=this;
     return new Promise((resolve,reject)=>{
       t.digest.then(function(wd){
@@ -39,6 +52,7 @@ export default class Query{
 
   }
   update(url,data){
+    cleanData(data);
     let t=this;
     return new Promise((resolve,reject)=>{
       t.digest.then(function(wd){
