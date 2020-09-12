@@ -26,13 +26,11 @@ Include the js file in your project using the script tag.
 ```html
 <script type="text/javascript" src="spcrud.simsol180.js"></script>
 ```
-[home](#sp-crud)  
 
 ### Items
 
 The Items Query Object is intended to aid in changing list items.
 
-[home](#sp-crud)  
 
 #### Items Example
 The below example first create's a list item, then reads it, then updates it and finally deletes it.
@@ -102,7 +100,6 @@ ItemsQuery Object:
 
 The Document Query Object is intended to handle the part of an upload following a file related event. For example, using a file input or reacting to a file drop event.
 
-[home](#sp-crud)  
 
 #### Documents Example
 html (default.aspx)
@@ -120,7 +117,6 @@ html (default.aspx)
 </html>
 ```
 
-[home](#sp-crud)  
 
 JavaScript (index.js)
 ```javascript
@@ -167,8 +163,6 @@ JavaScript (index.js)
 
 })()
 ```
-
-[home](#sp-crud)  
 
 #### Documents Documentation
 
