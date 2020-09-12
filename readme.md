@@ -3,8 +3,13 @@
 ## Quick Links
 [Mission](#mission)  
 [Installation](#Installation)  
-[Items](#items)  1. [Example](#items-example) 2. [Documentation](#items-documentation)  
-[Documents](#documents) 1. [Example](#documents-example) 2. [Documentation](#documents-documentation)
+[Items](#items)  
+		([Example](#items-example),[Documentation](#items-documentation))  
+[Documents](#documents)
+		([Example](#documents-example), [Documentation](#documents-documentation))
+
+[home](#sp-crud)  
+
 ## Mission
 
 SP-Crud makes programming with REST easier. As you know, CRUD stands for Create, Read, Update and Delete which succinctly identifies the mission of SP-Crud. Its mission is to make those things as easy as possible.
@@ -13,15 +18,21 @@ This executes using the permissions of the user. Therefore, some functionality m
 
 So far, this tool only works in office 365. However, I would like to bring it to SP2013-2019 if can I establish reliable testing environments on those platforms.
 
+[home](#sp-crud)  
+
 ## Installation
 
 Include the js file in your project using the script tag.
 ```html
 <script type="text/javascript" src="spcrud.simsol180.js"></script>
 ```
+[home](#sp-crud)  
+
 ### Items
 
 The Items Query Object is intended to aid in changing list items.
+
+[home](#sp-crud)  
 
 #### Items Example
 The below example first create's a list item, then reads it, then updates it and finally deletes it.
@@ -62,6 +73,8 @@ The below example first create's a list item, then reads it, then updates it and
 	})//close create
 })()
 
+[home](#sp-crud)  
+
 ```
 #### Items Documentation
 
@@ -83,9 +96,13 @@ ItemsQuery Object:
 | update |1. A [SP.ListItems](https://docs.microsoft.com/en-us/previous-versions/office/sharepoint-visio/jj245356(v=office.15)?redirectedfrom=MSDN) object containing at least an Id. | Returns a [promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) that resolves a blank string or rejects. |
 | delete |1. A [SP.ListItems](https://docs.microsoft.com/en-us/previous-versions/office/sharepoint-visio/jj245356(v=office.15)?redirectedfrom=MSDN) object containing at least an Id | Returns a [promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) that resolves a blank string or rejects. |
 
+[home](#sp-crud)  
+
 ### Documents
 
 The Document Query Object is intended to handle the part of an upload following a file related event. For example, using a file input or reacting to a file drop event.
+
+[home](#sp-crud)  
 
 #### Documents Example
 html (default.aspx)
@@ -101,8 +118,10 @@ html (default.aspx)
 	</form>
 </body>
 </html>
-
 ```
+
+[home](#sp-crud)  
+
 JavaScript (index.js)
 ```javascript
 
@@ -148,6 +167,9 @@ JavaScript (index.js)
 
 })()
 ```
+
+[home](#sp-crud)  
+
 #### Documents Documentation
 
 Class Name: &quot;DocumentQuery&quot;  
@@ -185,3 +207,4 @@ Similarly, to get the name:
 ```javascript
  obj.d.Name
 ```
+[home](#sp-crud)  
