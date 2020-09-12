@@ -20,7 +20,7 @@ This executes using the permissions of the user. Therefore, some functionality m
 So far, this tool only works in office 365. However, I would like to bring it to SP2013-2019 if can I establish reliable testing environments on those platforms.
 
 [home](#sp-crud)  
-
+<br /><br />
 ## Installation
 
 Include the js file in your project using the script tag.
@@ -98,7 +98,7 @@ ItemsQuery Object:
 | delete |1. A [SP.ListItems](https://docs.microsoft.com/en-us/previous-versions/office/sharepoint-visio/jj245356(v=office.15)?redirectedfrom=MSDN) object containing at least an Id | Returns a [promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) that resolves a blank string or rejects. |
 
 [home](#sp-crud)  
-
+<br /><br />
 ### Documents
 
 The Document Query Object is intended to handle the part of an upload following a file related event. For example, using a file input or reacting to a file drop event.
