@@ -126,7 +126,6 @@ html (default.aspx)
 
 JavaScript (index.js)
 ```javascript
-
 (function(){"use strict"
 	//note: it does not end with a slash
 	var web="https://simsol180.sharepoint.com"
@@ -156,9 +155,9 @@ JavaScript (index.js)
 
 
 			/************    Doing the upload here!     ****************/
-			var items=ev.dataTransfer.files
+			var items=ev.dataTransfer.files;
 			Documents.upload(items,false,true).then(function(results){
-				console.log("upload",results)
+				console.log("upload",results);
 				dropArea.innerHTML="done uploading...";
 			})
 
@@ -167,11 +166,12 @@ JavaScript (index.js)
 		},false);
 	});
 
-})()
-```
-<br/>  
-#### Documents Documentation
+})();
 
+```
+
+
+#### Documents Documentation
 Class Name: &quot;DocumentQuery&quot;  
 JS reference: simsol180.spcrud.Document
 
