@@ -20,14 +20,14 @@ This executes using the permissions of the user. Therefore, some functionality m
 So far, this tool only works in office 365. However, I would like to bring it to SP2013-2019 if can I establish reliable testing environments on those platforms.
 
 [home](#sp-crud)  
-<br /><br />
+<br/><br/>
 ## Installation
 
 Include the js file in your project using the script tag.
 ```html
 <script type="text/javascript" src="spcrud.simsol180.js"></script>
 ```
-<br /><br />
+<br/><br/>
 [home](#sp-crud)  
 
 ### Items
@@ -74,7 +74,7 @@ The below example first create's a list item, then reads it, then updates it and
 })()
 
 [home](#sp-crud)  
-<br />
+<br/>
 ```
 #### Items Documentation
 
@@ -97,7 +97,7 @@ ItemsQuery Object:
 | delete |1. A [SP.ListItems](https://docs.microsoft.com/en-us/previous-versions/office/sharepoint-visio/jj245356(v=office.15)?redirectedfrom=MSDN) object containing at least an Id | Returns a [promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) that resolves a blank string or rejects. |
 
 [home](#sp-crud)  
-<br /><br />
+<br/><br/>
 ### Documents
 
 The Document Query Object is intended to handle the part of an upload following a file related event. For example, using a file input or reacting to a file drop event.
@@ -165,7 +165,7 @@ JavaScript (index.js)
 
 })()
 ```
-<br />
+<br/>
 #### Documents Documentation
 
 Class Name: &quot;DocumentQuery&quot;  
@@ -182,7 +182,7 @@ DocumentQuery Object:
 | Name | Parameters | Result |
 | --- | --- | --- |
 | upload | 1. A [DataTransfer.files](https://developer.mozilla.org/en-US/docs/Web/API/DataTransfer/files) object 2. Overwritable (Boolean) Default false. True if you want uploaded documents to overwrite pre-existing documents. False if you want uploads with pre-existing files to fail. 3. ensureUnique (Boolean) Default false. True if you want to add a unique number to the end of documents. False if you want the original file names unchanged. | An array of UploadResponses  |
-<br /><br />
+<br/><br/>
 UploadResponses look like this:
 ```javascript
 {
@@ -194,7 +194,7 @@ UploadResponses look like this:
 	}
 }
  ```
- <br />
+ <br/>
 To get the id of the uploaded document, try this:
 ```javascript
 Documents.upload(items,false,true).then(function(results){
@@ -204,7 +204,7 @@ Documents.upload(items,false,true).then(function(results){
 	}
 })
 ```
-<br />
+<br/>
 Similarly, to get the name:
 ```javascript
 Documents.upload(items,false,true).then(function(results){
