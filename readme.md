@@ -21,14 +21,16 @@ So far, this tool only works in office 365. However, I would like to bring it to
 
 [home](#sp-crud)  
 <br/><br/>
+
 ## Installation
 
 Include the js file in your project using the script tag.
 ```html
 <script type="text/javascript" src="spcrud.simsol180.js"></script>
 ```
-<br/><br/>
+
 [home](#sp-crud)  
+<br/><br/>
 
 ### Items
 
@@ -165,7 +167,7 @@ JavaScript (index.js)
 
 })()
 ```
-<br/>
+<br/>  
 #### Documents Documentation
 
 Class Name: &quot;DocumentQuery&quot;  
@@ -194,7 +196,8 @@ UploadResponses look like this:
 	}
 }
  ```
- <br/>
+ <br/>  
+
 To get the id of the uploaded document, try this:
 ```javascript
 Documents.upload(items,false,true).then(function(results){
@@ -205,6 +208,7 @@ Documents.upload(items,false,true).then(function(results){
 })
 ```
 <br/>
+
 Similarly, to get the name:
 ```javascript
 Documents.upload(items,false,true).then(function(results){
