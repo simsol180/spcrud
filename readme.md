@@ -20,6 +20,7 @@ Include the js file in your project using the script tag.
 The Items Query Object is intended to aid in changing list items.
 
 #### Example
+The below example first create's a list item, then reads it, then updates it and finally deletes it.
 ```javascript
 
 (function(){"use strict"
@@ -32,12 +33,11 @@ The Items Query Object is intended to aid in changing list items.
 	var ToBuy=new ItemsQuery("To Buy",web);
 
 	//create a list item
-	ToBuy.create({
-		Title:"Ice Cream for my daughter"
-	}).then(function(){
+	ToBuy.create({ Title:"Ice Cream for my daughter"	}).then(function(){
 
 		//read list items
 		ToBuy.read("$orderby=Id desc").then(function(query){
+
 			//get the first row
 			var results=query.d.results;
 			var row=results[0]
@@ -51,6 +51,7 @@ The Items Query Object is intended to aid in changing list items.
 				//delete the list item (sorry, little goose; no ice cream for you.)
 				ToBuy.delete(row).then(function(){
 					//the row is deleted
+
 				})//close delete
 			})//close update
 		})//close read
@@ -83,6 +84,22 @@ ItemsQuery Object:
 The Document Query Object is intended to handle the part of an upload following a file related event. For example, using a file input or reacting to a file drop event.
 
 #### Example
+html (default.aspx)
+```html
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<script type="text/javascript" src="spcrud.simsol180.js"></script>
+	<script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+	<form id="form1" runat="server">
+		<div  id="dropArea" style="border:1px silver dotted; width:500px; height:500px;">&nbsp;</div>
+	</form>
+</body>
+</html>
+
+```
+JavaScript (index.js)
 ```javascript
 
 (function(){"use strict"
