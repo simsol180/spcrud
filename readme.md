@@ -1,6 +1,14 @@
 
 # SP-Crud
-
+## Quick Links
+[create an anchor](#mission)
+[create an anchor](#Installation)
+[create an anchor](#items)
+[create an anchor](#items-example)
+[create an anchor](#items-documentation)
+[create an anchor](#documents)
+[create an anchor](#documents-example)
+[create an anchor](#documents-documentation)
 ## Mission
 
 SP-Crud makes programming with REST easier. As you know, CRUD stands for Create, Read, Update and Delete which succinctly identifies the mission of SP-Crud. Its mission is to make those things as easy as possible.
@@ -19,7 +27,7 @@ Include the js file in your project using the script tag.
 
 The Items Query Object is intended to aid in changing list items.
 
-#### Example
+#### Items Example
 The below example first create's a list item, then reads it, then updates it and finally deletes it.
 ```javascript
 
@@ -59,7 +67,7 @@ The below example first create's a list item, then reads it, then updates it and
 })()
 
 ```
-#### Documentation
+#### Items Documentation
 
 Class Name: &quot;ItemsQuery&quot;  
 JS reference: simsol180.spcrud.Items
@@ -82,8 +90,8 @@ ItemsQuery Object:
 ### Documents
 
 The Document Query Object is intended to handle the part of an upload following a file related event. For example, using a file input or reacting to a file drop event.
-[create an anchor](#anchors-in-markdown)
-#### Example
+
+#### Documents Example
 html (default.aspx)
 ```html
 <html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
@@ -144,7 +152,7 @@ JavaScript (index.js)
 
 })()
 ```
-#### Documentation
+#### Documents Documentation
 
 Class Name: &quot;DocumentQuery&quot;  
 JS reference: simsol180.spcrud.Document
