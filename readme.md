@@ -197,11 +197,21 @@ UploadResponses look like this:
  ```
 To get the id of the uploaded document, try this:
 ```javascript
- obj.d.ListItemAllFields.ID
+	Documents.upload(items,false,true).then(function(results){
+		for(var i in results){
+			var uploadedFile=results[i];
+			console.log(uploadedFile.d.ListItemAllFields.ID)
+		}
+	})
 ```
 
 Similarly, to get the name:
 ```javascript
- obj.d.Name
+Documents.upload(items,false,true).then(function(results){
+	for(var i in results){
+		var uploadedFile=results[i];
+		console.log(uploadedFile.d.Name)
+	}
+})
 ```
 [home](#sp-crud)  
