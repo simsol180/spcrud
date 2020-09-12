@@ -13,7 +13,7 @@ So far, this tool only works in office 365. However, I would like to bring it to
 
 Include the js file in your project using the script tag.
 ```html
-<script type=&quot;text/javascript&quot; src=&quot;spcrud.simsol180.js&quot;></script>
+<script type="text/javascript" src="spcrud.simsol180.js"></script>
 ```
 ### Items
 
