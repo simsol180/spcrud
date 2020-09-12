@@ -8,7 +8,6 @@
 [Documents](#documents)
 		([Example](#documents-example), [Documentation](#documents-documentation))
 
-[home](#sp-crud)  
 
 ## Mission
 
