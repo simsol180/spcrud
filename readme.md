@@ -12,9 +12,9 @@ So far, this tool only works in office 365. However, I would like to bring it to
 ## Installation
 
 Include the js file in your project using the script tag.
-
+```html
 <script type=&quot;text/javascript&quot; src=&quot;spcrud.simsol180.js&quot;></script>
-
+```
 ### Items
 
 The Items Query Object is intended to aid in changing list items.
